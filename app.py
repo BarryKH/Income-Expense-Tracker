@@ -9,7 +9,7 @@ totalMonths = st.number_input("Total Months", min_value=1, max_value=12, value=3
 data = []
 currentMonth = 0
 for eachMonth in range(totalMonths):
-    st.write(f"### Month {currentMonth}")
+    st.write(f"### Month {currentMonth+1}")
     month = st.text_input(f"Month {currentMonth+1} (e.g., Jan)", key=f"m{currentMonth}")
     income = st.number_input(f"Income for {month}", key = f"inc{currentMonth}", step = 100.0)
     expense = st.number_input(f"Expense for {month}", key = f"exp{currentMonth}", step = 100.0)
