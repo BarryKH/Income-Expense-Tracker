@@ -7,7 +7,7 @@ st.subheader("Data")
 #data
 totalMonths = st.number_input("Total Months", min_value=1, max_value=12, value=3)
 data = []
-currentMonth = 1
+currentMonth = 0
 for eachMonth in range(totalMonths):
     st.write(f"### Month {currentMonth}")
     month = st.text_input(f"Month {currentMonth+1} (e.g., Jan)", key=f"m{currentMonth}")
