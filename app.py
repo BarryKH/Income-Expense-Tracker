@@ -14,7 +14,7 @@ for eachMonth in range(totalMonths):
     income = st.number_input(f"Income for {month}", key = f"inc{currentMonth-1}", step = 100.0)
     expense = st.number_input(f"Expense for {month}", key = f"exp{currentMonth-1}", step = 100.0)
     if month:
-        data.append({"Month":month, "Income":income, "Expense":expense, "Savings":income - expend})
+        data.append({"Month":month, "Income":income, "Expense":expense, "Savings":income - expense})
     currentMonth += 1
 if data:
     df = pd.DataFrame(data)
